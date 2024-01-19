@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Projeto 5 - Cronômetro/Timer</title>
+    <link rel="shortcut icon" href="img/logo-site.ico" type="image/x-icon">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/CSS/global.css"> 
+    <link rel="stylesheet" href="assets/CSS/header.css">
+    <link rel="stylesheet" href="assets/CSS/footer.css">
+    <link rel="stylesheet" href="assets/CSS/projeto5.css">
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="author" content="João Guilherme">
+    <meta name="description" content="Um cronômetro e um temporizador, são ferramentas para medir o tempo, sendo úteis em controlar o tempo de atividades específicas, registrar o tempo decorrido em um determinado evento e entre outras.">
+    <meta name="keywords" content="cronometro, timer, javascript">
+    <!--SMO-->
+    <meta property="og:title" content="Portifólio do João">
+    <meta property="og:site_name" content="João Dev">
+    <meta property="og:description" content="Um cronômetro e um temporizador, são ferramentas para medir o tempo, sendo úteis em controlar o tempo de atividades específicas, registrar o tempo decorrido em um determinado evento e entre outras.">
+    <meta property="og:url" content="https://joaodev.site">
+    <meta property="og:image" content="img/Projeto5.jpeg">
+    <meta property="og:image:type" content="image/jpeg">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="inicio">
+                <a href="#"><img class="logo" src="img/logo.svg" alt="logo do site"></a>
+                <img class="icon" src="img/menu.svg" alt="icone do menu sanduiche">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Sobre Mim</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="titulo">Projeto 5 - Cronômetro/Timer</h1>
+        <section class="clock">
+            <div class="buttons">
+                <span class="btn1">Cronômetro</span>
+                <span class="btn2 active">Timer</span>
+            </div>
+            <div class="display">
+                <div class="digito">
+                    <img src="img/chevron-up.svg" alt="seta para cima" class="hourArrowUp">
+                    <p class="hour">00</p>
+                    <img src="img/chevron-down.svg" alt="seta para baixo" class="hourArrowDown">
+                </div>
+                <span>:</span>
+                <div class="digito">
+                    <img src="img/chevron-up.svg" alt="seta para cima" class="minArrowUp">
+                    <p class="min">00</p>
+                    <img src="img/chevron-down.svg" alt="seta para baixo" class="minArrowDown">
+                </div>
+                <span>:</span>
+                <div class="digito">
+                    <img src="img/chevron-up.svg" alt="seta para cima" class="secArrowUp">
+                    <p class="sec">00</p>
+                    <img src="img/chevron-down.svg" alt="seta para baixo" class="secArrowDown">
+                </div>
+                <p>00</p>
+            </div>
+            <div class="btn-action">
+                <span class="start">Iniciar</span>
+                <span class="pause">Pausar</span>
+                <span class="reset">Reiniciar</span>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="logos">
+            <img src="img/logo.svg" alt="logo do site no roapé">
+            <div class="redes">
+                <a href="#" target="_blank"><img src="img/github.svg" alt="link do github"></a>
+                <a href="#" target="_blank"><img src="img/linkedin.svg" alt="link do linkedin"></a>
+            </div>
+        </div>
+        <p>Site desenvolvido por João Guilherme</p>
+        <div class="copy">
+            <img src="img/copyright.svg" alt="copyright">
+            <p>Copyright 2024 João Dev</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/proj-05.js"></script>
+</body>
+</html>

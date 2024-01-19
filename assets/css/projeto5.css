@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Century';
+    src: url("../fonts/Century-Normal.ttf") format("ttf");
+}
+
+main {
+    width: 100%;
+    min-height: calc(100% - 70px - 88px);
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    font-size: 25px;
+    color: #000;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 8px 10px 0 10px;
+    margin: 20px 13px 0 13px;
+    border-bottom: 1px solid #000;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0 0 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 85px;
+}
+
+.buttons span {
+    color: #4b4b4b;
+    font-size: 25px;
+    padding: 8px 8px 0 8px;
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: 2px solid #0D2DEB;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 6px solid #0D2DEB;
+    margin: 30px 0 0 0;
+    gap: 5px;
+}
+
+.display .digito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.display .digito img {
+    width: 30px;
+    height: 30px;
+}
+
+.display .digito p {
+    font-size: 40px;
+    color: #000;
+    font-family: 'Century';
+}
+
+.display span {
+    font-size: 40px;
+    color: #000;
+    display: flex;
+    font-family: 'Century';
+}
+
+.display > p {
+    font-size: 25px;
+    color: #000;
+    font-family: 'Century';
+}
+
+.btn-action {
+    display: flex;
+    gap: 10px;
+    margin: 25px 0 0 0;
+}
+
+.btn-action span {
+    padding: 15px;
+    font-size: 25px;
+    color: #FFF;
+    background-color: #3084F2;
+    border: 1px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsividade*/
+@media screen and (min-width: 600px) {
+    .titulo {
+        width: 560px;
+        margin: 20px auto 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .titulo {
+        width: 1136px;
+    }
+}

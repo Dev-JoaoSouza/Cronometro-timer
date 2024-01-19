@@ -1,0 +1,120 @@
+/* Estilizando o Header */
+header {
+    background-color: #0528F2;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+
+.sub {
+    border-radius: 0;
+    border-bottom: 1px solid #b5b5b5;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+}
+
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    padding: 10px 13px;
+}
+
+.logo {
+    width: 125px;
+}
+
+.icon {
+    height: 50px;
+}
+
+.nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+}
+
+.show {
+    display: flex;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista {
+    position: absolute;
+    top: 70.8px;
+    background-color: #0528F2;
+    width: 100%;
+    z-index: 5;
+}
+
+.nav ul:last-child {
+    border-radius: 0 0 20px 20px;
+}
+
+.nav ul li {
+    align-self: stretch;
+}
+
+.nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 8px;
+    align-self: stretch;
+    border-bottom: 1px solid #b5b5b5;
+}
+
+.nav ul li:nth-child(4) a {
+    border-radius: 0 0 20px 20px;
+}
+
+/* Responsivo */
+@media screen and (min-width: 600px) {
+    .head {
+        width: 560px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    .inicio {
+        padding: 0;
+    }
+    .icon {
+        display: none;
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav ul {
+        flex-direction: row;
+        gap: 15px;
+    }
+    .nav ul li a {
+        border: none;
+        padding: 13px 8px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .head {
+        width: 1136px;
+    }
+}
